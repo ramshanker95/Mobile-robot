@@ -35,6 +35,9 @@ Ultrasonic ultrasonic1(trigPin1, echoPin1);
 #define encoderpin_right_v PA2
 #define encoderpin_right_w PA1
 
+#define ro_pin PB1
+#define gd_pin PB0
+#define yc_pin PA7 
 
 volatile long pulse_count[] = {0, 0};
 volatile long pulse_count_pre[] = {0, 0};
@@ -47,6 +50,11 @@ bool HSU_Val_1 = digitalRead(encoderpin_right_u);
 bool HSV_Val_1 = digitalRead(encoderpin_right_v);
 bool HSW_Val_1 = digitalRead(encoderpin_right_w); 
 
+#define obj_c PB4
+#define obj_l PB3
+#define obj_r PA15
+#define no_obj PB5
+#define dest PB6
 
 void left_motor_dir(char ch)
 {
